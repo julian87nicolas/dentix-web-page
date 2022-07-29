@@ -1,13 +1,15 @@
-
+:root {
+    --rose: #FAC2C2;
+}
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    flex-basis: 100%;
     margin: 0;
     padding: 0;
     
-    border: red solid 2px;
+    /* border: red solid 2px; */
 }
 
 h2 {
@@ -19,8 +21,8 @@ h2 a img {
     background-color: white;
     border-radius: 50%;
     z-index: 2;
-    /* transform: translateX(25%); */
-    border: 5px solid #FAC2C2;
+    transform: translateX(10%);
+    border: 5px solid var(--rose);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     margin: 0;
     transition: all 0.5s;
@@ -40,7 +42,7 @@ ul {
 
     border-radius: 10px;
 
-    background-color: #FAC2C2;
+    background-color: var(--rose);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -53,10 +55,67 @@ ul a {
 
 ul a:hover {
     transform: scale(1.1);
+    text-shadow: 0 0 10px white;
 }
 
 
 h2 a img:hover{
-    transform: translateX(25%) rotateY(20deg);
+    transform: translateX(10%) rotateY(20deg);
     box-shadow: -15px 0 10px 0 rgba(0, 0, 0, 0.2);
 }
+
+.sep {
+    display: none;
+}
+
+/* responsive */
+@media screen and (max-width: 650px) {
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        /* border-bottom: var(--rose) solid 2px; */
+    }
+    h2 {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0 0 0;
+        padding: 0;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h2 a img {
+        transform: translateX(0%);
+    }
+
+    h2 a img:hover{
+        transform: rotateX(20deg);
+        box-shadow: 0px -10px 10px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    ul {
+        background-color: white;
+        box-shadow: none;
+        flex-wrap: wrap;
+
+        justify-content: space-evenly;
+    }
+
+    ul a {
+        /* margin: 1rem;
+        border: 2px solid var(--rose);
+        border-radius: 0.25rem;
+        padding: 0.5rem; */
+    }
+
+    .sep {
+        display: block;
+        height: 3px;
+        background: rgb(198,198,198);
+        background: linear-gradient(90deg, rgba(198,198,198,1) 1%, rgba(250,194,194,1) 10%, rgba(250,194,194,1) 50%, rgba(250,194,194,1) 90%, rgba(198,198,198,1) 99%);
+    }
+}
+
+

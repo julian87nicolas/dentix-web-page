@@ -16,6 +16,7 @@ function Navbar(){
                     <a href="#"><li>Sobre</li></a>
                 </ul>
             </nav>
+            <div className="sep"></div>
         </>
     )
 }
