@@ -1,5 +1,7 @@
 :root {
     --rose: #FAC2C2;
+    --md-rose:#E07DD1;
+    --dk-rose:#FF5789;
 }
 nav {
     display: flex;
@@ -81,9 +83,10 @@ ul li:hover .sub {
 
 
 h2 a img:hover{
-    transform: rotateY(20deg);
+    transform: rotateY(10deg);
     box-shadow: -15px 0 10px 0 rgba(0, 0, 0, 0.2);
 }
+
 
 .sep {
     display: none;
