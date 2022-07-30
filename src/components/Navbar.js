@@ -10,10 +10,10 @@ function Navbar(){
                     </a>
                 </h2>
                 <ul>
-                    <a href="#"><li>Inicio</li></a>
-                    <a href="#"><li>Contacto</li></a>
-                    <a href="#"><li>Ubicación</li></a>
-                    <a href="#"><li>Sobre</li></a>
+                    <li><a href="#">Inicio</a> <div className="sub"/></li>
+                    <li><a href="#">Contacto</a><div className="sub"/></li>
+                    <li><a href="#">Ubicación</a><div className="sub"/></li>
+                    <li><a href="#">Sobre</a><div className="sub"/></li>
                 </ul>
             </nav>
             <div className="sep"></div>
