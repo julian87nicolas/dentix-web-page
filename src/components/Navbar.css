@@ -29,7 +29,7 @@ h2 a img {
 }
 
 
-
+/* MENU */
 ul {
     display: flex;
     flex-direction: row;
@@ -46,16 +46,37 @@ ul {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
-ul a {
-    text-decoration: none;
-    color: black;
 
+ul li, a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     transition: all 0.5s;
 }
 
-ul a:hover {
-    transform: scale(1.1);
-    text-shadow: 0 0 10px white;
+.sub {
+    height: 1px;
+    background-color: black;
+    width: 0;
+    padding: 0;
+    margin-top: 3px;
+    margin-bottom: 0;
+    transition: all 0.5s;
+}
+
+ul li:hover a{
+    transform: scale(1.2);
+    /* text-shadow: 0 0 10px white; */
+    /* text bold */
+    transition: all 0.5s;
+}
+
+ul li:hover .sub {
+    width: 100%;
+    transition: all 0.5s;
 }
 
 
@@ -108,6 +129,7 @@ h2 a img:hover{
         margin: 0;
         padding: 0;
     }
+
 
     .sep {
         display: block;
